@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Protfolio</title>
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+  
+        <nav id="desktop-nav">
+            <div class="logo">Saumya Jain</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com/saumya.creative/?hl=en" target="_blank" rel="noopener noreferrer">Artwork</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="mobile-nav">
+            <div class="logo">Saumya Jain</div>
+            <div class="mobile-menu">
+                <div class="mobile-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="https://www.instagram.com/saumya.creative/?hl=en" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()">Artwork</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section id="profile">
+            <div class="profile-pic">
+                <img src="./pictures/profile.jpg" alt="Saumya Jain profile pic">
+            </div>
+            <div class="section-text">
+                <p class="section-text-p1">Hello I'm</p>
+                <h1 class="section-text-p2">Saumya Jain</h1>
+                <div class="btn-cointainer">
+                    <button class="btn btn-colour1" onclick="window.open('./pictures/resume.pdf')">Download CV</button>
+                    <button class="btn btn-colour2" onclick="location.href='./#Contact'">Contact Info</button>   
+            </div>
+            <div id="socials">
+                <img src="./pictures/linkedin.png" alt="my linkedin" onclick="location.href='https://www.linkedin.com/in/saumyajain2003/'" class="icon">
+                <img src="./pictures/github.png" alt="my github" onclick="location.href='https://github.com/Sau-2003'" class="icon">
+            </div>  
+        </section>
+        
+        <section id="About">
+            <p class="sectiontextp1">Get to know more</p>
+            <h1 class="sectiontextp2">About Me</h1>
+            <div class="section-container">
+                <div class="sectionpic-container">
+                    <img src="./pictures/about.png" alt="about me" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./pictures/education.png" alt="education" class="education">
+                            <h2 class="education">Education</h2>
+                            <p class="education">B. E. Mechanical</p>
+                            <p class="education">BITS Pilani K.K. Birla Campus</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="text-contaier">I’m a creative and results-driven professional with extensive experience in strategy analysis and product development. I specialize in leading innovative initiatives that optimize operational efficiency and drive meaningful impact. By blending creativity with data-driven insights, I excel at identifying challenges and crafting unique solutions that deliver real value. Passionate about transforming ideas into action, I thrive on turning complexity into clarity and driving continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./pictures/arrow.png" alt="arrow-icon" class="arrow-icon" onclick="location.href='./#Contact'">
+        </section>
+
+        <section id="Contact">
+            <p class="Contactinfo1">Get in Touch</p>
+            <p class="Contactinfo">Contact Me</p>
+            <div id="Contactsocials">
+                <a href="https://www.linkedin.com/in/saumyajain2003/" target="_blank">
+                    <img src="./pictures/linkedin.png" alt="my linkedin" class="icon"> www.linkedin.com/in/saumyajain2003
+                </a>
+                <a href="tel:+91-8889726554">
+                    <img src="./pictures/phone.png" alt="my phone" class="icon"> +91-8889726554
+                </a>
+                <a href="mailto:saumyajain617@gmail.com">
+                    <img src="./pictures/email.png" alt="my email" class="icon"> saumyajain617@gmail.com
+                </a>
+            </div>
+        </section>
+
+            <footer>
+                <nav>
+                  <div class="nav-links-cointainer">
+                        <ul class="nav-links">
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="https://www.instagram.com/saumya.creative/?hl=en" target="_blank" rel="noopener noreferrer">Artwork</a></li>
+                        </ul>
+                  </div> 
+                </nav>
+                <p>Copyright &#169; 2025 Saumya Jain. All Rights Reserved.</p>
+            </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

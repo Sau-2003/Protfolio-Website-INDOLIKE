@@ -1,0 +1,123 @@
+/* Base styles for desktop view */
+#mobile-nav {
+    display: none;
+}
+
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) 
+{
+    /* Switch nav visibility */
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    /* Profile section adjustments */
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .section-text {
+        margin-top: 1rem;
+    }
+
+    #socials {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Contact section adjustments */
+    #Contactsocials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #Contactsocials a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        font-size: 1rem;
+    }
+
+    #Contactsocials img.icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Mobile menu styling (optional) */
+    .mobile-menu {
+        position: relative;
+    }
+
+    .mobile-icon span {
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        margin: 4px 0;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .menu-links li {
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .menu-links li a {
+        text-decoration: none;
+        color: black;
+    }
+}
